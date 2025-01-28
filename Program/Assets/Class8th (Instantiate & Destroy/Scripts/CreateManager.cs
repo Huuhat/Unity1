@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class CreateManager : MonoBehaviour
 {
-    [SerializeField] GameObject Unit;
 
+    private float time;
     private GameObject clone;
-
-    void Start()
+    [SerializeField] float createTime = 3;
+    [SerializeField] GameObject Unit;
+    [SerializeField] Transform[] transformList; 
+    
+    private void Update()
     {
-      clone = Instantiate(Unit);
-        
-        clone.transform.position = new Vector3(0, 0, -5);
+        time += Time.deltaTime;
+        if (time >= createTime) 
+        {
+            Create();
+
+            time = 0;
+        }
+    }
+    private void Create()
+    {
+        if (clone == null)
+        {
+            clone = Instantiate(Unit, transformList[Random.Range(0, transformList.Length)]);
+        }
     }
 
 }

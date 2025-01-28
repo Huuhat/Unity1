@@ -358,6 +358,8 @@
 "Assets/Class7th (Usuer Interface)/Scripts/ButtonManager.cs"
 "Assets/Class7th (Usuer Interface)/Scripts/Select.cs"
 "Assets/Class8th (Instantiate & Destroy/Scripts/CreateManager.cs"
+"Assets/Class8th (Instantiate & Destroy/Scripts/Wraith.cs"
+"Assets/Class9th (Colllision)/Scripts/BilliardBall.cs"
 -langversion:9.0
 /deterministic
 /optimize+
