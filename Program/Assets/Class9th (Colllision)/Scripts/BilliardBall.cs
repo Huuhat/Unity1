@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BilliardBall : MonoBehaviour
 {
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
     [SerializeField] Vector3 direction;
 
     private void Awake()
